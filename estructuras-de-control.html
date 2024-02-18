@@ -1,0 +1,227 @@
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content="Astro v2.10.14" />
+    <title>Estructuras de control</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <span class="app-title">
+          <img
+            src="IMG/fav-icon.png"
+            alt="Logo sayloryna"
+            width="30"
+            height="30"
+          />
+          Introducción al Desarrollo Web -TRP
+        </span>
+        <nav>
+          <a href="/presentacion/index.html">Índice</a>
+          | Estructuras de control
+        </nav>
+      </header>
+    <div class="exercises">
+      <h1>Estructuras de control</h1>
+      <h2>Condicionales-ejercicios</h2>
+      <p>1.Declara una variable que almacene un número. Tu código debe imprimir un mensaje diciendo si el número es negativo, positivo o cero.</p>
+      <section class="exercisesAnswers">
+        <pre>
+         <code>
+ const number= -35
+const checker= Math.sign(number)
+ switch (checker){
+    case 0:
+        console.log("es cero")
+        break;
+    case 1:
+        console.log("es positivo")
+        break;
+    case -1:
+        console.log("es negativo")
+        break;
+    default:
+        console.log("elige un numero pendejo")
+ }
+
+         </code>
+        </pre>
+      </section>
+      <p>2.Pregúntale al usuario su edad:</p>
+      <p>Imprime por consola un texto diciéndole al usuario si puede votar o no. La condición para poder votar es ser mayor de edad.</p>
+      <section class="exercisesAnswers">
+        <pre>
+         <code>
+const age = Number(prompt("Enter your age"))
+ if (age >= 18){
+    prompt("ya puedes votar mi pana")
+
+ }else {
+    prompt("Aún no pedes votar bebé")
+ }
+
+         </code>
+        </pre>
+      </section>
+      <p>3.Escribe un código que almacene una mano (“izquierda” o “derecha”). Luego debe preguntar al usuario “¿En qué mano está la bola?“.</p>
+      <p>Si ha acertado, imprime por consola un mensaje de felicidades. Si no ha acertado, imprime por consola un mensaje de consolación.</p>
+      <section class="exercisesAnswers">
+        <pre>
+         <code>
+const ballLocation = "DERECHA"
+ const hand = prompt("En que mano esta la pelota?(Escribe derecha o izquierda)").toUpperCase()
+ if (hand == ballLocation){
+    prompt("olee acertaste")
+ }else{
+    prompt("pringao")
+ }
+         </code>
+        </pre>
+      </section>
+      <p>4.Escribe un código que pida al usuario un número de mes (del 1 al 12).
+
+Después debe imprimir por consola el nombre del mes correspondiente.</p>
+ <section class="exercisesAnswers">
+        <pre>
+         <code>
+const selectedNumber = prompt("chuus a namber bituin 1 and 12","6")
+
+switch(selectedNumber){
+    case "1":
+        alert("ENERO")
+        break;
+    case "2":
+        alert("FEBRERO")
+        break;
+    case "3":
+        alert("MARZO")
+        break;
+    case "4":
+        alert("ABRIL")
+        break;
+    case "5":
+        alert("MAYO")
+        break;
+    case "6":
+        alert("JUNIO")
+        break;
+    case "7":
+        alert("JULIO")
+        break;
+    case "8":
+        alert("AGOSTO")
+        break;
+    case "9":
+        alert("SEPTIEMBRE")
+        break;
+    case "10":
+        alert("OCTUBRE")
+        break;
+    case "11":
+        alert("NOVIEMBRE")
+        break;
+    case "12":
+        alert("DICIEMBRE")
+        break;
+    default:
+        alert("tio haz lo que te pido porfavor :( ")
+}
+         </code>
+        </pre>
+      </section>
+      <h2>Bucles-ejercicios</h2>
+    <p>1.Escribe un bucle <code>for</code> que imprima por consola los números del 10 al 1.</p>
+    <section class="exercisesAnswers">
+        <pre>
+         <code>
+//poner codigo 
+//aqui 
+
+         </code>
+        </pre>
+</section>
+
+    <p>2.Escribe un bucle <code>for</code> que imprima por consola los números del 0 al 100 de
+    10 en 10.</p>
+    <section class="exercisesAnswers">
+        <pre>
+         <code>
+//poner codigo 
+//aqui 
+
+         </code>
+        </pre>
+</section>
+
+    <p>3.Escribe un bucle <code>for</code> que imprima por consola la tabla de multiplicar del
+    9.</p>
+    <section class="exercisesAnswers">
+        <pre>
+         <code>
+//poner codigo 
+//aqui 
+
+         </code>
+        </pre>
+</section>
+    <p>4.Escribe un bucle <code>while</code> que imprima los múltiplos de 3 que hay entre 1 y
+100.</p>
+<section class="exercisesAnswers">
+        <pre>
+         <code>
+//poner codigo 
+//aqui 
+
+         </code>
+        </pre>
+</section>
+<p>¿Cuántas veces se va a imprimir el saludo por consola?</p>
+
+<pre class="astro-code light-plus" style="background-color:#FFFFFF;overflow-x:auto" tabindex="0"><code><span class="line"><span style="color:#AF00DB">for</span><span style="color:#000000"> (</span><span style="color:#0000FF">let</span><span style="color:#000000"> </span><span style="color:#001080">n</span><span style="color:#000000"> = </span><span style="color:#098658">0</span><span style="color:#000000">; </span><span style="color:#001080">n</span><span style="color:#000000"> &lt; </span><span style="color:#098658">999</span><span style="color:#000000">; </span><span style="color:#001080">n</span><span style="color:#000000">++) {</span></span>
+<span class="line"><span style="color:#000000">  </span><span style="color:#001080">console</span><span style="color:#000000">.</span><span style="color:#795E26">log</span><span style="color:#000000">(</span><span style="color:#A31515">"Hola"</span><span style="color:#000000">);</span></span>
+<span class="line"><span style="color:#000000">}</span></span></code></pre>
+<p style="background-color: #f2f1f1;" >999</p>
+<p>¿Y ahora?</p>
+
+<pre class="astro-code light-plus" style="background-color:#FFFFFF;overflow-x:auto" tabindex="0"><code><span class="line"><span style="color:#AF00DB">for</span><span style="color:#000000"> (</span><span style="color:#0000FF">let</span><span style="color:#000000"> </span><span style="color:#001080">n</span><span style="color:#000000"> = </span><span style="color:#098658">0</span><span style="color:#000000">; </span><span style="color:#001080">n</span><span style="color:#000000"> &lt; </span><span style="color:#098658">3</span><span style="color:#000000">; </span><span style="color:#001080">n</span><span style="color:#000000"> += </span><span style="color:#098658">2</span><span style="color:#000000">) {</span></span>
+<span class="line"><span style="color:#000000">  </span><span style="color:#001080">console</span><span style="color:#000000">.</span><span style="color:#795E26">log</span><span style="color:#000000">(</span><span style="color:#A31515">"Hola"</span><span style="color:#000000">);</span></span>
+<span class="line"><span style="color:#000000">}</span></span></code></pre>
+<p style="background-color: #f2f1f1;">2</p>
+<p>¿Y en este caso?</p>
+
+<pre class="astro-code light-plus" style="background-color:#FFFFFF;overflow-x:auto" tabindex="0"><code><span class="line"><span style="color:#AF00DB">for</span><span style="color:#000000"> (</span><span style="color:#0000FF">let</span><span style="color:#000000"> </span><span style="color:#001080">n</span><span style="color:#000000"> = </span><span style="color:#098658">0</span><span style="color:#000000">; </span><span style="color:#001080">n</span><span style="color:#000000"> &lt; </span><span style="color:#098658">3</span><span style="color:#000000">; </span><span style="color:#001080">n</span><span style="color:#000000">--) {</span></span>
+<span class="line"><span style="color:#000000">  </span><span style="color:#001080">console</span><span style="color:#000000">.</span><span style="color:#795E26">log</span><span style="color:#000000">(</span><span style="color:#A31515">"Hola"</span><span style="color:#000000">);</span></span>
+<span class="line"><span style="color:#000000">}</span></span></code></pre></li>
+<p style="background-color: #f2f1f1;">infinito</p>
+
+<p>Escribe un programa que en función de una nota numérica (puedes crear una variable y asignar la nota que quieras, o puedes pedírsela al usuario), imprima por consola una calificación:</p>
+<p>0-3 (sin incluir 3): Muy deficiente<br>
+3-5 (sin incluir 5): Insuficiente<br>
+5-6 (sin incluir 6): Suficiente<br>
+6-7 (sin incluir 7): Bien<br>
+7-9 (sin incluir 9): Notable<br>
+9-10: Sobresaliente<br></p>
+<section class="exercisesAnswers">
+        <pre>
+         <code>
+//poner codigo 
+//aqui 
+
+         </code>
+        </pre>
+</section>
+    </div>
+    <div>
+      <a class="back" href="/presentacion/index.html">volver</a>
+    </div>
+    <footer class="main-footer">
+      <div class="container">
+        <span>Introducsion al Desarrollo Webs</span>
+        <span>AC·DC Coders</span>
+      </div>
+    </footer>
+  </body>
+</html>

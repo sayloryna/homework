@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/presentacion/form/form-styles.css" />
+  </head>
+  <body>
+    <h1>Formulario de Clara</h1>
+    <form action="https//fake-web.com">
+      <label for="UserName"
+        >Usuario:
+        <input type="text" id="name" placeholder="Introduce tu usuario" />
+      </label>
+      <label for="email">
+        Email:<input
+          type="email"
+          id="email"
+          placeholder="example@example.com"
+        />
+      </label>
+      <label for="password"
+        >Contraseña:
+        <input type="password" name="password" id="password" />
+      </label>
+      <label for="PhoneNumber"
+        >Telefono:
+        <input type="number" id="phoneNUmber" />
+      </label>
+      <label for="BirthDate"
+        >Fecha de Nacimiento:
+        <input type="date" id="dateOfBirth" />
+      </label>
+      <label for="Gender"
+        >Género:
+        <select id="Gender">
+          <option value="Macho">Macho</option>
+          <option value="Hembra">Hembra</option>
+          <option value="Otro">Otro</option>
+          <option value="DontSay">Prefiero no contestar</option>
+        </select>
+      </label>
+      <label for="terms&conditions">
+        <input type="checkbox" id="T&C" />He leído y acepto los Terminos y
+        Condiciones de uso
+      </label>
+      <button type="submit">SUBMIT</button>
+    </form>
+  </body>
+</html>

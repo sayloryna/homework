@@ -1,0 +1,115 @@
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="IMG/fav-icon.png" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content="Astro v2.10.14" />
+    <title>Métodos de arrays</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <span class="app-title">
+          <img
+            src="IMG/fav-icon.png"
+            alt="Logo sayloryna"
+            width="30"
+            height="30"
+          />
+          Introducción al Desarrollo Web -TRP
+        </span>
+        <nav>
+          <a href="/presentacion/index.html">Índice</a>
+          | Métodos de arrays
+        </nav>
+      </header>
+    <div class="exercises">
+      <h1>Métodos de arrays</h1>
+      <h2>Métodos de arrays-ejercicios</h2>
+  
+<p>1.Filtrar palabras cortas: Crea una función que reciba un listado de
+palabras y devuelva otro listado que contenga sólo las palabras con 3 o
+menos letras.</p>
+
+<p>Por ejemplo: si recibe “hola”, “sal”, “no” y “cielo”, debe devolver “sal”
+y “no”.</p>
+<section class="exercisesAnswers">
+  <pre>
+const randomWords= ["casa","pedo","gato", "naranja","platano","pintura","zanahoria","pis","caca","gas","pio","ojo","judia"]
+
+function onlyThreeLetters(listOfWords){
+return listOfWords.filter((word)=>word.length ===3)
+}
+console.log(onlyThreeLetters(randomWords))
+    </code>
+  </pre>
+</section>
+<p>2.Generador de nombres hacker: Escribe una función que genere y devuelva un
+nombre de hacker aleatorio. Lo generará a partir de dos listas de palabras
+(una con sustantivos y otras con adjetivos).</p>
+<p>Ejemplos: “SleepyDolphin”, “SadKid”, “GoodDoctor”, “MadDog”,
+“SneakyTiger”, etc.</p>
+<section class="exercisesAnswers">
+  <pre>
+    <code>
+const names=  [ "mouse","fire" , "keyboard","chair", "fingers", "glasses", "cat"];
+const adjetives = ["sneaky","flaming", "fast","slow","tremendous","sloppy","old"]
+function createHackerName(names,adjetives){
+    return adjetives[Math.floor(Math.random()*adjetives.length)] +"-"+ names[Math.floor(Math.random()*names.length)]
+}
+console.log(createHackerName(names,adjetives))
+    </code>
+  </pre>
+</section>
+<p>3.Carrera de tortugas: Crea un array de objetos que representen tortugas con
+dos propiedades: nombre y velocidad.</p>
+<p>Crea una función que reciba el array de tortugas, simule una carrera y
+devuelva la tortuga ganadora. Utiliza el método <code>sort()</code> para simular una
+carrera de tortugas y determinar quién es el ganador.</p>
+<section class="exercisesAnswers">
+  <pre>
+    <code>
+const tortugasDeCarreras= [
+    {name:"paca",speed:100},
+    {name:"tula", speed:200},
+    {name:"fabiana",speed:50}
+]
+
+function racingTortugas(tortugas){
+    return tortugas.sort((tortuA,tortuB)=>tortuB.speed - tortuA.speed)
+
+}
+console.log(racingTortugas(tortugasDeCarreras))
+    </code>
+  </pre>
+</section>
+<p>4.Inversor de palabras: Crea una función que reciba un array de palabras y
+devuelva otro array con las mismas palabras, pero invertidas. Utiliza el
+método <code>map()</code> para transformar cada palabra en una nueva palabra que
+contenga las letras en orden inverso.</p>
+<section class="exercisesAnswers">
+  <pre>
+    <code>
+const wordList = ["casa", "pendejo", "palindromo","ojo",];
+
+function reverseWords(listOfWords) {
+    return listOfWords.map(word => word.split('').reverse().join(''));
+}
+
+console.log(reverseWords(wordList));
+    </code>
+  </pre>
+</section>
+    </div>
+    <div>
+      <a class="back" href="/presentacion/index.html">volver</a>
+    </div>
+    <footer class="main-footer">
+      <div class="container">
+        <span>Introducsion al Desarrollo Webs</span>
+        <span>AC·DC Coders</span>
+      </div>
+    </footer>
+  </body>
+</html>

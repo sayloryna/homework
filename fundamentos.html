@@ -1,0 +1,130 @@
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="IMG/fav-icon.png" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content="Astro v2.10.14" />
+    <title>Fundamentos</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <span class="app-title">
+          <img
+            src="IMG/fav-icon.png"
+            alt="Logo sayloryna"
+            width="30"
+            height="30"
+          />
+          Introducción al Desarrollo Web -TRP
+        </span>
+        <nav>
+          <a href="/presentacion/index.html">Índice</a>
+          | Fundamentos de JavaScript
+        </nav>
+      </header>
+    <div class="exercises">
+      <h1>Ejercicios:</h1>
+      <h2>Expresiones</h2>
+      <p>
+       1.¿Sabrías decir cuántas expresiones de identificador hay en este programa? ¿cuáles son?
+
+
+      </p>
+      <section class="exercisesAnswers" id="expresiones 1">
+        <pre>
+         <code>
+hay tres:
+en cosnt result= number1 + number 2; hay 2 number 1 y number2
+y en const resultMessage= "the result is "+ result; hay 1,(result)
+         </code>
+        </pre>
+      </section>
+
+      <p>
+        2.¿Qué expresión escribirías en el hueco de la última línea para que por consola aparezca cómo te gusta a ti la tortilla? ¿Qué tipo de expresión es?
+      </p>
+         <section class="exercisesAnswers" id="expresiones 1">
+        <pre>
+         <code>
+const assertion = "me gusta la tortilla..."
+const option1 = "con cebolla"
+const option2 = "sin cebolla"
+
+console.log(option2); es una expresion de identificador,  a no ser que quiera que aparezca:
+ "me gusta la tortilla... sin cebolla"
+entonces escribiria:
+console.log(assertion + " " + option2) y seria una expresion de concatenación formada por 
+2expresiones de identificador y una literal
+         </code>
+        </pre>
+      </section>
+      <p>
+        3.Teniendo en cuenta las diferencias que hemos visto entre <code>let</code>  y <code>const</code> , ¿sabrías explicar por qué podemos hacer el primer código pero no el segundo? Es decir, ¿por qué podemos declarar una variable con <code>let</code> y no inicializarla, pero no podemos hacer lo mismo con <code>const</code> .
+      </p>
+<section class="exercisesAnswers" id="expresiones 3">
+        <pre>
+        <code >
+let age; es correcto 
+const age; da error
+        </code>
+        </pre>
+      </section>
+<p>
+  4.Identifica las expresiones que hay en este código, e indica de qué tipo son:
+</p>
+<section class="exercisesAnswers" id="expresiones 4">
+        <pre>
+        <code >
+const age = 25;
+let firstName = "Amanda"; -> literal
+const isStudent = true; ->literal
+const averageStudent = (90+85+78+92+88)/ 5; -> aritmetica
+let message = "Hello" + firstName + "you are " + age + "years old."; ->concatenacion(literal e identificador)
+age = age +1; -> aritmetica pero creo que da error si no se usa "strict"
+const doubleAge = age*2; aritmetica
+const firstNumber = 2; literal
+const secondNumber = 30; literal
+const addition= firstNumber + secondNumber; de identificador
+        </code>
+        </pre>
+      </section>
+      <h2>Naming</h2>
+      <p>1.¿Qué identificadores elegirías para estas variables?</p>
+      <section class="exercisesAnswers" id="naming 1">
+        <pre>
+        <code >
+aqui irían las respuestas
+        </code>
+        </pre>
+      </section>
+      <p>2.Sustituye estos malos identificadores por buenos identificadores:</p>
+      <section class="exercisesAnswers" id="naming 2">
+        <pre>
+        <code >
+aqui irían las respuestas
+        </code>
+        </pre>
+      </section>
+      <p>3.¿Qué recomendaciones de naming incumplen estás variables?</p>
+      <section class="exercisesAnswers" id="naming 3">
+        <pre>
+        <code >
+aqui irían las respuestas
+        </code>
+        </pre>
+      </section>
+
+    </div>
+    <div>
+      <a class="back" href="/presentacion/index.html">volver</a>
+    </div>
+    <footer class="main-footer">
+      <div class="container">
+        <span>Introducsion al Desarrollo Webs</span>
+        <span>AC·DC Coders</span>
+      </div>
+    </footer>
+  </body>
+</html>

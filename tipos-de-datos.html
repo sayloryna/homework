@@ -1,0 +1,269 @@
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="IMG/fav-icon.png" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content="Astro v2.10.14" />
+    <title>Tipos de datos</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <span class="app-title">
+          <img
+            src="IMG/fav-icon.png"
+            alt="Logo sayloryna"
+            width="30"
+            height="30"
+          />
+          Introducción al Desarrollo Web - ISDI Coders
+        </span>
+        <nav>
+          <a href="/presentacion/index.html">Índice</a>
+          | Tipos de datos
+        </nav>
+      </header>
+
+      <h1 id="tipos-de-datos">Tipos de datos</h1>
+      <h2>Numbers - ejercicios</h2>
+        <p>1¿Qué crees que imprimirá este programa por consola,<code>true</code>  o <code>false</code> ? ¿Por qué?</p>
+      <section class="exercisesAnswers" id="numbers 1">
+        <pre>
+        <code >
+false
+        </code>
+        </pre>
+      </section>
+       <p>
+        Conversor de temperatura:
+        <ul>
+          <li>Declara una variable para la temperatura en grados Celsius (C) e inicialízala.</li>
+          <li>Convierte la temperatura a Fahrenheit usando la fórmula: F = (C * 9/5) + 32. Almacénala en una variable.</li>
+          <li>Convierte la temperatura a Kelvin usando la fórmula: K = C + 273.15. Almacénala en una variable.</li>
+          <li>Imprime por consola, de una forma amigable y en un único mensaje, la temperatura en grados Celsius, Fahrenheit y Kelvin.</li>
+        </ul>
+        </p>
+      <section class="exercisesAnswers" id="numbers 2">
+        <pre>
+        <code >
+const tempCelsius = 30;
+const tempFahrenheit= tempCelsius*1.8+32;
+const tempKelvin = tempCelsius+273.15;
+
+console.log(tempCelsius + "Cº equivalen a: " + tempFahrenheit + "ºF y " + tempKelvin + "ºK." )
+        </code>
+        </pre>
+      </section>
+       <p>Calculadora de horas de sueño:
+        <ul>
+          <li>Almacena tu edad actual en una variable.</li>
+          <li>Almacena tu edad máxima esperada.</li>
+          <li>Almacena la cantidad estimada de horas de sueño por día.</li>
+          <li>Calcula cuántas horas de sueño necesitarás en total para el resto de tu vida.</li>
+          <li>Muestra el resultado en la consola de la siguiente manera: “Necesitarás NN horas de sueño para llegar a la respetable edad de X años”.`</li>
+        </ul>
+          Nota: cuenta con que todos los años tienen 365 días y que estás ejecutando el programa justo el día de tu cumpleaños.
+        </p>
+
+      <section class="exercisesAnswers" id="naming 3">
+        <pre>
+        <code >
+const currentAge = 30;
+const maxAge = 33
+const sleepHoursPerDay = 8;
+const totalSleepingTimeInLife = (maxAge - currentAge) * 365*8;
+const totalAwakeTimeInLife = (maxAge - currentAge) * 365*(24-sleepHoursPerDay);
+
+console.log("Necesitarás " + totalSleepingTimeInLife + " horas de sueño para llegar a la respetable edad de "
++ maxAge + " años. Por lo que te quedan "+totalAwakeTimeInLife + " horas para vivir.");
+        </code>
+        </pre>
+      </section>
+
+      <h2>Strings-ejercicios</h2>
+      <p>1.Rellena la segunda línea de este código para que al final imprima <code>"The text ends with ."</code>.
+
+Tiene que funcionar para cualquier cadena de texto, es decir,<code>lastCharacter</code>  tiene que contener el último caracter del texto, sea cual sea.</p>
+       <section class="exercisesAnswers" id="strings1">
+        <pre>
+        <code >
+const text = "This sentence ens with a period.";
+const lastCharacter = text.at(-1);
+console.log("The text ens with " + lastCharacter)
+        </code>
+        </pre>
+      </section> 
+      <p>2.Tienes un string con un listado de nombres. Los nombres están separados por comas, pero a veces las comas van seguidas de un espacio y a veces no.</p>
+      <p>Escribe el código necesario para que se imprima por consola un array con los nombres (los nombres no pueden contener un espacio):<code>["Luisa", "Berta",   "Marc", "Pedro", "Martín", "Julia"]</code> </p>
+      <section class="exercisesAnswers" id="strings2">
+        <pre>
+        <code >
+const studentNames = "Luisa, Berta,Marc, Pedro, Martin, Julia"
+const studentNamesNoSpace= studentNames.replaceAll(" ","");
+const studentList=studentNamesNoSpace.split(",")
+console.log(studentList)
+        </code>
+        </pre>
+        <p>3.¿Qué añadirías al siguiente código para imprimir por consola el string ? (separado por coma, no por punto). <code>"4,50€</code></p>
+        <section class="exercisesAnswers" id="strings3">
+        <pre>
+        <code >
+const result = 4.5;
+const decimalDigits = 2;
+const formattedResult = result.toFixed(decimalDigits)
+console.log(formattedResult.replace(".", ",") + "€");
+        </code>
+        </pre>
+        <p>4.¿Cómo concatenarías estos dos strings usando template literals?</p>
+        <section class="exercisesAnswers" id="strings4">
+        <pre>
+        <code >
+const name = "Will";
+const surname = "Smith";
+const fullName = name + " "+ surname
+        </code>
+        </pre>
+      </section> 
+      <h2>Booleans- ejercicios</h2>
+      <p>1.Declara dos variables <code>isRaining</code> y <code>isTooSunny</code> y asígnales valores booleanos. Luego declara una variable <code>isUmbrellaUseful</code> que me diga si me va a ser útil llevar un paraguas.</p></p>
+      <p>El programa debe recomendarme que lleve paraguas si llueve o si hace demasiado sol.</p>
+      <section class="exercisesAnswers" id="booleans1">
+        <pre>
+        <code >
+const isTooSunny= true;
+const isRaining = true;
+const isUmbrellaUseful = isTooSunny || isRaining;
+        </code>
+        </pre>
+      </section> 
+      <p>2.¿Puedes decirnos a qué valores apuntarán las variables <code>c</code> y <code>d</code>? Explica tu razonamiento.</p>
+      <section class="exercisesAnswers" id="booleans2">
+        <pre>
+        <code >
+const a = 3;
+const b =[];
+const c = a? 10:6; // apuntara a 10 xk  es truthy
+const d =b? "hola" : "adiós" // apuntara  a  "hola" xk  no es falsy  ya que aunque esté vacio es un objeto 
+        </code>
+        </pre>
+      </section> 
+      <p>3.En la segunda línea, escribe una expresión que resuelva a <code>true</code> si una cadena de texto tiene más de 10 caracteres:</p>
+      <section class="exercisesAnswers" id="booleans3">
+      
+      <pre class="astro-code light-plus" style="background-color:#FFFFFF;overflow-x:auto" tabindex="0"><code><span class="line"><span style="color:#0000FF">const</span><span style="color:#000000"> </span><span style="color:#0070C1">text</span><span style="color:#000000"> = </span><span style="color:#A31515">"Hello, world!"</span><span style="color:#000000">;</span></span>
+<span class="line"><span style="color:#0000FF">const</span><span style="color:#000000"> </span><span style="color:#0070C1">hasMoreThanTenCharacters</span><span style="color:#000000"> = text.length > 10 ? "yes": "no"</span></span>
+<span class="line"><span style="color:#001080">console</span><span style="color:#000000">.</span><span style="color:#795E26">log</span><span style="color:#000000">(</span><span style="color:#A31515">`Does "</span><span style="color:#0000FF">${</span><span style="color:#001080">text</span><span style="color:#0000FF">}</span><span style="color:#A31515">" have more than 10 characters? </span><span style="color:#0000FF">${</span><span style="color:#001080">hasMoreThanTenCharacters</span><span style="color:#0000FF">}</span><span style="color:#A31515">`</span><span style="color:#000000">);</span></span></code></pre>
+      </section>
+<p>4.En la segunda línea, escribe una expresión que resuelva a <code>true</code> si una persona es un adolescente (13 - 19 años):</p>
+      <section class="exercisesAnswers" id="booleans4">
+        <pre>
+        <code >
+const age = 16;
+const isTeenager = age >= 13 || age <=19
+console.log(` It is "${isTeenager}" that a  person that's "${age}" years old is a teenager`);
+
+        </code>
+        </pre>
+      </section> 
+      <p>5.En la tercera línea, escribe una expresión que resuelva a <code>true</code> si una persona tiene privilegios de admin o es propietario:</p>
+      <section class="exercisesAnswers" id="booleans5">
+        <pre>
+        <code >
+const isAdmin = false;
+const isOwner = true;
+const hasSpecialAcces = isAdmin||isOwner;
+        </code>
+        </pre>
+      </section> 
+      <p>6.En la tercera línea, escribe una expresión que resuelva a <code>true</code> si una persona puede salir en función de si es estudiante y además ha terminado sus deberes:</p>
+      <section class="exercisesAnswers" id="booleans6">
+        <pre class="astro-code light-plus" style="background-color:#FFFFFF;overflow-x:auto" tabindex="0"><code><span class="line"><span style="color:#0000FF">const</span><span style="color:#000000"> </span><span style="color:#0070C1">isStudent</span><span style="color:#000000"> = </span><span style="color:#0000FF">true</span><span style="color:#000000">;</span></span>
+<span class="line"><span style="color:#0000FF">const</span><span style="color:#000000"> </span><span style="color:#0070C1">hasFinishedHomework</span><span style="color:#000000"> = </span><span style="color:#0000FF">false</span><span style="color:#000000">;</span></span>
+<span class="line"><span style="color:#0000FF">const</span><span style="color:#000000"> </span><span style="color:#0070C1">canGoOut</span><span style="color:#000000"> = isStudent && hasFinishedHomework; "YES" : "NO"</span></span>
+<span class="line"><span style="color:#001080">console</span><span style="color:#000000">.</span><span style="color:#795E26">log</span><span style="color:#000000">(</span><span style="color:#A31515">`Can the student go out? </span><span style="color:#0000FF">${</span><span style="color:#001080">canGoOut</span><span style="color:#0000FF">}</span><span style="color:#A31515">`</span><span style="color:#000000">);</span></span></code></pre>
+      </section> 
+      <h2>Array-ejercicios</h2>
+      <p>1.Crea un array con los nombres de los animales que han vivido contigo a lo largo de tu vida, ordenados cronológicamente.</p>
+      <section class="exercisesAnswers" id="array1">
+        <pre>
+        <code >
+const myPets =["Betty","Sansón","Elma","Max","Ash","Freya"]
+console.log(myPets.at(0))
+console.log(myPets.at(5))
+
+        </code>
+        </pre>
+      </section> 
+      <p>2.Aquí tienes una colección de precios de artículos de una tienda, ordenados de mayor a menor.</p>
+      <pre class="astro-code light-plus" style="background-color:#FFFFFF;overflow-x:auto" tabindex="0"><code><span class="line"><span style="color:#0000FF">const</span><span style="color:#000000"> </span><span style="color:#0070C1">glassesPrice</span><span style="color:#000000"> = </span><span style="color:#098658">200</span><span style="color:#000000">;</span></span>
+<span class="line"><span style="color:#0000FF">const</span><span style="color:#000000"> </span><span style="color:#0070C1">shirtPrice</span><span style="color:#000000"> = </span><span style="color:#098658">70</span><span style="color:#000000">;</span></span>
+<span class="line"><span style="color:#0000FF">const</span><span style="color:#000000"> </span><span style="color:#0070C1">glovesPrice</span><span style="color:#000000"> = </span><span style="color:#098658">30</span><span style="color:#000000">;</span></span>
+<span class="line"><span style="color:#0000FF">const</span><span style="color:#000000"> </span><span style="color:#0070C1">dressPrice</span><span style="color:#000000"> = </span><span style="color:#098658">15</span><span style="color:#000000">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#0000FF">const</span><span style="color:#000000"> </span><span style="color:#0070C1">prices</span><span style="color:#000000"> = [</span><span style="color:#001080">glassesPrice</span><span style="color:#000000">, </span><span style="color:#001080">shirtPrice</span><span style="color:#000000">, </span><span style="color:#001080">glovesPrice</span><span style="color:#000000">, </span><span style="color:#001080">dressPrice</span><span style="color:#000000">];</span></span></code></pre>
+      <p>Imprime por consola los precios de los dos artículos más caros (obteniéndolos del array).</p>
+           <section class="exercisesAnswers" id="array2">
+        <pre>
+        <code >
+console.log(prices.slice(0,2));
+        </code>
+        </pre>
+      </section>
+      <p>3.Escribe una expresión que calcule la altura media de una colección de alturas:</p>
+           <section class="exercisesAnswers" id="arrays3">
+        <pre>
+        <code >
+const heights= [180, 164, 137, 171,];
+ const averageHeights = (heights[0]+heights[1]+heights[2]+heights[3]) / heights.length;
+        </code>
+        </pre>
+      </section>
+      <h2>Object-ejercicios</h2>
+      <p>Crea dos Pokémon. Para ello utiliza dos objetos. De cada Pokémon tienes que almacenar el nombre, el tipo y el grado de evolución (1 o 2).</p>
+      <p>Haz que uno de los pokémon evolucione: modifica su nombre y aumenta su grado
+de evolución en 1. </p><p>Por ejemplo, que Charmander pase a ser Charmeleon.</p>
+<p></p><p>Imprime por consola la información de cada Pokémon en un formato amigable, por ejemplo:</p><p>“El Pokémon llamado Pikachu es de tipo eléctrico y está en el grado de evolución 2”<br>
+“El Pokémon llamado Pidgey es de tipo volador y está en el grado de evolución 1”</p>
+<p>Crea un objeto pokémon igual que el de los ejercicios anteriores, pero que también almacene los movimientos del pokémon. Por ejemplo, Pikachu tiene los movimientos “Impactrueno”, “Ataque Rápido”, “Rayo”.</p>
+     <section class="exercisesAnswers" id="objects1">
+        <pre>
+        <code >
+const rattata = {
+    name: "Max Steel";
+    type: "Normal";
+    evolutionStage: 1;
+ }
+ const meowth= {
+    name: "Ash"
+    type: "Psíquico"
+    evolutionStage: 1
+ }
+rattata.name= "Max Steel II"
+rattata.evolutionStage=2
+
+console.log(` El pokemon "${rattata}" es de tipo "${rattata.name}" y esta en el grado "${rattata.evolutionStage}" `);
+
+const eevee = {
+    name: "Freya";
+    type: "Fuego";
+    evolutionStage: 1;
+    movements=["Llamarada","Dormir","Comer","Chirrido"]
+ }
+ meowth.movements= ["Persuasión","Dormir","Comer","Arañazo"];
+ rattata.movements =["Escavar","Dormir","Comer","Mega-mordisco"]
+        </code>
+        </pre>
+      </section> 
+</section> 
+      </section> 
+      </div>
+    </div>
+    <footer class="main-footer">
+      <div class="container">
+        <span>Introducsion al Desarrollo Webs</span>
+        <span>AC·DC Coders</span>
+      </div>
+    </footer>
+  </body>
+</html>

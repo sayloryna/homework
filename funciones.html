@@ -1,0 +1,278 @@
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="IMG/fav-icon.png" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content="Astro v2.10.14" />
+    <title>Funciones</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <span class="app-title">
+          <img
+            src="IMG/fav-icon.png"
+            alt="Logo sayloryna"
+            width="30"
+            height="30"
+          />
+          Introducción al Desarrollo Web -TRP
+        </span>
+        <nav>
+          <a href="/presentacion/index.html">Índice</a>
+          | Funciones
+        </nav>
+      </header>
+    <div class="exercises">
+      <h1>Funciones</h1>
+      <h2>Ejercicios 1</h2>
+
+      <p>1.Ejecuta este código</p>
+<pre class="astro-code light-plus" style="background-color:#FFFFFF;overflow-x:auto" tabindex="0"><code><span class="line"><span style="color:#0000FF">let</span><span style="color:#000000"> </span><span style="color:#001080">currentHour</span><span style="color:#000000"> = </span><span style="color:#098658">9</span><span style="color:#000000">;</span></span>
+<span class="line"><span style="color:#0000FF">let</span><span style="color:#000000"> </span><span style="color:#001080">personName</span><span style="color:#000000"> = </span><span style="color:#A31515">"Juan"</span><span style="color:#000000">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#AF00DB">if</span><span style="color:#000000"> (</span><span style="color:#001080">currentHour</span><span style="color:#000000"> &lt; </span><span style="color:#098658">10</span><span style="color:#000000">) {</span></span>
+<span class="line"><span style="color:#000000">  </span><span style="color:#001080">console</span><span style="color:#000000">.</span><span style="color:#795E26">log</span><span style="color:#000000">(</span><span style="color:#A31515">`Buenos días, </span><span style="color:#0000FF">${</span><span style="color:#001080">personName</span><span style="color:#0000FF">}</span><span style="color:#A31515">`</span><span style="color:#000000">);</span></span>
+<span class="line"><span style="color:#000000">} </span><span style="color:#AF00DB">else</span><span style="color:#000000"> </span><span style="color:#AF00DB">if</span><span style="color:#000000"> (</span><span style="color:#001080">currentHour</span><span style="color:#000000"> &lt; </span><span style="color:#098658">20</span><span style="color:#000000">) {</span></span>
+<span class="line"><span style="color:#000000">  </span><span style="color:#001080">console</span><span style="color:#000000">.</span><span style="color:#795E26">log</span><span style="color:#000000">(</span><span style="color:#A31515">`Buenas tardes, </span><span style="color:#0000FF">${</span><span style="color:#001080">personName</span><span style="color:#0000FF">}</span><span style="color:#A31515">`</span><span style="color:#000000">);</span></span>
+<span class="line"><span style="color:#000000">} </span><span style="color:#AF00DB">else</span><span style="color:#000000"> {</span></span>
+<span class="line"><span style="color:#000000">  </span><span style="color:#001080">console</span><span style="color:#000000">.</span><span style="color:#795E26">log</span><span style="color:#000000">(</span><span style="color:#A31515">`Buenas noches, </span><span style="color:#0000FF">${</span><span style="color:#001080">personName</span><span style="color:#0000FF">}</span><span style="color:#A31515">`</span><span style="color:#000000">);</span></span>
+<span class="line"><span style="color:#000000">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#001080">currentHour</span><span style="color:#000000"> = </span><span style="color:#098658">17</span><span style="color:#000000">;</span></span>
+<span class="line"><span style="color:#001080">personName</span><span style="color:#000000"> = </span><span style="color:#A31515">"Ana"</span><span style="color:#000000">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#AF00DB">if</span><span style="color:#000000"> (</span><span style="color:#001080">currentHour</span><span style="color:#000000"> &lt; </span><span style="color:#098658">10</span><span style="color:#000000">) {</span></span>
+<span class="line"><span style="color:#000000">  </span><span style="color:#001080">console</span><span style="color:#000000">.</span><span style="color:#795E26">log</span><span style="color:#000000">(</span><span style="color:#A31515">`Buenos días, </span><span style="color:#0000FF">${</span><span style="color:#001080">personName</span><span style="color:#0000FF">}</span><span style="color:#A31515">`</span><span style="color:#000000">);</span></span>
+<span class="line"><span style="color:#000000">} </span><span style="color:#AF00DB">else</span><span style="color:#000000"> </span><span style="color:#AF00DB">if</span><span style="color:#000000"> (</span><span style="color:#001080">currentHour</span><span style="color:#000000"> &lt; </span><span style="color:#098658">20</span><span style="color:#000000">) {</span></span>
+<span class="line"><span style="color:#000000">  </span><span style="color:#001080">console</span><span style="color:#000000">.</span><span style="color:#795E26">log</span><span style="color:#000000">(</span><span style="color:#A31515">`Buenas tardes, </span><span style="color:#0000FF">${</span><span style="color:#001080">personName</span><span style="color:#0000FF">}</span><span style="color:#A31515">`</span><span style="color:#000000">);</span></span>
+<span class="line"><span style="color:#000000">} </span><span style="color:#AF00DB">else</span><span style="color:#000000"> {</span></span>
+<span class="line"><span style="color:#000000">  </span><span style="color:#001080">console</span><span style="color:#000000">.</span><span style="color:#795E26">log</span><span style="color:#000000">(</span><span style="color:#A31515">`Buenas noches, </span><span style="color:#0000FF">${</span><span style="color:#001080">personName</span><span style="color:#0000FF">}</span><span style="color:#A31515">`</span><span style="color:#000000">);</span></span>
+<span class="line"><span style="color:#000000">}</span></span></code></pre>      
+<p>Modifica el código anterior para que la lógica de la hora y el saludo se
+encuentre en una función llamada <code>greet</code> que reciba como parámetros la hora y
+el nombre de la persona.</p>
+<p>Haz quye el resultado sea el mismo</p>
+      <section class="exercisesAnswers">
+        <pre>
+         <code>
+//poner codigo 
+//aqui 
+
+         </code>
+        </pre>
+</section>
+<p>2.Dada esta función:</p>
+<pre class="astro-code light-plus" style="background-color:#FFFFFF;overflow-x:auto" tabindex="0"><code><span class="line"><span style="color:#0000FF">function</span><span style="color:#000000"> </span><span style="color:#795E26">sum</span><span style="color:#000000">(</span><span style="color:#001080">numberA</span><span style="color:#000000">, </span><span style="color:#001080">numberB</span><span style="color:#000000">) {</span></span>
+<span class="line"><span style="color:#000000">  </span><span style="color:#AF00DB">return</span><span style="color:#000000"> </span><span style="color:#001080">numberA</span><span style="color:#000000"> + </span><span style="color:#001080">numberB</span><span style="color:#000000">;</span></span>
+<span class="line"><span style="color:#000000">}</span></span></code></pre>
+
+<p>Haz que la función <code>sum</code> se ejecute 3 veces, pasándole un 6 y un 8. Pero en
+cada una de las tres llamadas, el 6 y el 8 los tienes que escribir con
+expresiones diferentes.</p>
+<section class="exercisesAnswers">
+        <pre>
+         <code>
+//poner codigo 
+//aqui 
+
+         </code>
+        </pre>
+</section>
+
+<p>3.El concepto de <strong>caja negra</strong> nos dice que para usar una función no es necesario saber cómo está implementada. Solo necesitamos saber qué parámetros recibe y qué devuelve.</p><p></p><p>Teniendo en cuenta esto, contesta a las siguientes preguntas:</p><ul><li>¿Cuál es la firma de esta función?</li><li>¿Qué hace la función?</li></ul><pre class="astro-code light-plus" style="background-color:#FFFFFF;overflow-x:auto" tabindex="0"><code><span class="line"><span style="color:#001080">console</span><span style="color:#000000">.</span><span style="color:#795E26">log</span><span style="color:#000000">(</span><span style="color:#795E26">square</span><span style="color:#000000">(</span><span style="color:#098658">5</span><span style="color:#000000">)); </span><span style="color:#008000">// 25</span></span>
+<span class="line"><span style="color:#001080">console</span><span style="color:#000000">.</span><span style="color:#795E26">log</span><span style="color:#000000">(</span><span style="color:#795E26">square</span><span style="color:#000000">(</span><span style="color:#098658">2</span><span style="color:#000000">)); </span><span style="color:#008000">// 4</span></span></code></pre>
+<section class="exercisesAnswers">
+        <pre>
+         <code>
+//poner codigo 
+//aqui 
+
+         </code>
+        </pre>
+</section>
+<p>4.Escribe dos implementaciones distintas para la anterior función <code>square</code>.</p>
+<section class="exercisesAnswers">
+        <pre>
+         <code>
+//poner codigo 
+//aqui 
+
+         </code>
+        </pre>
+</section>
+<p>5.¿Qué hará JavaScript en la última línea y por qué?</p><p></p><pre class="astro-code light-plus" style="background-color:#FFFFFF;overflow-x:auto" tabindex="0"><code><span class="line"><span style="color:#0000FF">const</span><span style="color:#000000"> </span><span style="color:#795E26">add</span><span style="color:#000000"> = (</span><span style="color:#001080">numberA</span><span style="color:#000000">, </span><span style="color:#001080">numberB</span><span style="color:#000000">) </span><span style="color:#0000FF">=&gt;</span><span style="color:#000000"> {</span></span>
+<span class="line"><span style="color:#000000">  </span><span style="color:#0000FF">const</span><span style="color:#000000"> </span><span style="color:#0070C1">result</span><span style="color:#000000"> = </span><span style="color:#001080">numberA</span><span style="color:#000000"> + </span><span style="color:#001080">numberB</span><span style="color:#000000">;</span></span>
+<span class="line"><span style="color:#000000">  </span><span style="color:#AF00DB">return</span><span style="color:#000000"> </span><span style="color:#001080">result</span><span style="color:#000000">;</span></span>
+<span class="line"><span style="color:#000000">};</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#795E26">add</span><span style="color:#000000">(</span><span style="color:#098658">3</span><span style="color:#000000">, </span><span style="color:#098658">4</span><span style="color:#000000">);</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#001080">console</span><span style="color:#000000">.</span><span style="color:#795E26">log</span><span style="color:#000000">(</span><span style="color:#001080">result</span><span style="color:#000000">); </span><span style="color:#008000">// ?</span></span></code></pre>
+<section class="exercisesAnswers">
+        <pre>
+         <code>
+//poner codigo 
+//aqui 
+
+         </code>
+        </pre>
+</section>
+      <h2>Ejercicios 2</h2>
+  <p>1.Escribe una función de tipo command.</p>
+  <section class="exercisesAnswers">
+        <pre>
+         <code>
+//poner codigo 
+//aqui 
+
+         </code>
+        </pre>
+</section>
+  <p>2.Escribe una función de tipo query.</p>
+  <section class="exercisesAnswers">
+        <pre>
+         <code>
+//poner codigo 
+//aqui 
+
+         </code>
+        </pre>
+</section>
+<p>3.Mira este código</p>
+<pre class="astro-code light-plus" style="background-color:#FFFFFF;overflow-x:auto" tabindex="0"><code><span class="line"><span style="color:#0000FF">const</span><span style="color:#000000"> </span><span style="color:#795E26">isLate</span><span style="color:#000000"> = (</span><span style="color:#001080">hour</span><span style="color:#000000">) </span><span style="color:#0000FF">=&gt;</span><span style="color:#000000"> {</span></span>
+<span class="line"><span style="color:#000000">  </span><span style="color:#AF00DB">if</span><span style="color:#000000"> (</span><span style="color:#001080">hour</span><span style="color:#000000"> &gt; </span><span style="color:#098658">22</span><span style="color:#000000">) {</span></span>
+<span class="line"><span style="color:#000000">    </span><span style="color:#001080">console</span><span style="color:#000000">.</span><span style="color:#795E26">log</span><span style="color:#000000">(</span><span style="color:#0000FF">true</span><span style="color:#000000">);</span></span>
+<span class="line"><span style="color:#000000">  } </span><span style="color:#AF00DB">else</span><span style="color:#000000"> {</span></span>
+<span class="line"><span style="color:#000000">    </span><span style="color:#001080">console</span><span style="color:#000000">.</span><span style="color:#795E26">log</span><span style="color:#000000">(</span><span style="color:#0000FF">false</span><span style="color:#000000">);</span></span>
+<span class="line"><span style="color:#000000">  }</span></span>
+<span class="line"><span style="color:#000000">};</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#AF00DB">if</span><span style="color:#000000"> (</span><span style="color:#795E26">isLate</span><span style="color:#000000">(</span><span style="color:#098658">23</span><span style="color:#000000">)) {</span></span>
+<span class="line"><span style="color:#000000">  </span><span style="color:#001080">console</span><span style="color:#000000">.</span><span style="color:#795E26">log</span><span style="color:#000000">(</span><span style="color:#A31515">"Es tarde"</span><span style="color:#000000">);</span></span>
+<span class="line"><span style="color:#000000">} </span><span style="color:#AF00DB">else</span><span style="color:#000000"> {</span></span>
+<span class="line"><span style="color:#000000">  </span><span style="color:#001080">console</span><span style="color:#000000">.</span><span style="color:#795E26">log</span><span style="color:#000000">(</span><span style="color:#A31515">"No es tarde"</span><span style="color:#000000">);</span></span>
+<span class="line"><span style="color:#000000">}</span></span></code>
+</pre>
+<p>¿Qué crees que va a imprimir por consola? ¿Por qué?</p>
+<section class="exercisesAnswers">
+        <pre>
+         <code>
+//poner codigo 
+//aqui 
+
+         </code>
+        </pre>
+</section>
+<p>4.Calcula la edad de un perro en edad perruna. Define una función que reciba como parámetro la edad del perro en humano y devuelva la edad en perruno. Básate en la tasa de conversión de 1 año humano es igual a 7 de perro.</p>
+<p>Ejemplo:</p>
+<ul>
+<li>Si el perro tiene 1 año humano, tiene 7 años perrunos.</li>
+<li>Si el perro tiene 6 años humanos, tiene 42 años perrunos.</li>
+</ul>
+<section class="exercisesAnswers">
+        <pre>
+         <code>
+//poner codigo 
+//aqui 
+
+         </code>
+        </pre>
+</section>
+<p>5.Escribe una función que reciba un número entero y devuelva el siguiente número par. Ejemplos:</p>
+<ul>
+<li>Si le pasas un 7, te devuelve un 8</li>
+<li>Si le pasas un 2, te devuelve un 4</li>
+<li>Si le pasas un 15, te devuelve un 16</li>
+<li>Si le pasas un 20, te devuelve un 22</li>
+</ul>
+<section class="exercisesAnswers">
+        <pre>
+         <code>
+//poner codigo 
+//aqui 
+
+         </code>
+        </pre>
+</section>
+<p>6.Escribe una función llamada <code>doSomething</code> que reciba como parámetro otra función. Acuérdate de que una función es un valor, por tanto esto se puede hacer.</p><p></p><p>Al parámetro que recibe la función <code>doSomething</code> llámalo <code>action</code>.</p><p></p><p>La función <code>doSomething</code> debe invocar a la función <code>action</code> que recibe por
+parámetro.</p>
+<section class="exercisesAnswers">
+        <pre>
+         <code>
+//poner codigo 
+//aqui 
+
+         </code>
+        </pre>
+</section>
+      
+  <h2>Ejercicios 3</h2>
+  <p>1.Vuelve a escribir estas funciones siguiendo la sintaxis arrow function:</p><p></p><pre class="astro-code light-plus" style="background-color:#FFFFFF;overflow-x:auto" tabindex="0"><code><span class="line"><span style="color:#0000FF">function</span><span style="color:#000000"> </span><span style="color:#795E26">getRandomNumber</span><span style="color:#000000">(</span><span style="color:#001080">min</span><span style="color:#000000">, </span><span style="color:#001080">max</span><span style="color:#000000">) {</span></span>
+<span class="line"><span style="color:#000000">  </span><span style="color:#AF00DB">return</span><span style="color:#000000"> </span><span style="color:#001080">Math</span><span style="color:#000000">.</span><span style="color:#795E26">floor</span><span style="color:#000000">(</span><span style="color:#001080">Math</span><span style="color:#000000">.</span><span style="color:#795E26">random</span><span style="color:#000000">() * (</span><span style="color:#001080">max</span><span style="color:#000000"> - </span><span style="color:#001080">min</span><span style="color:#000000"> + </span><span style="color:#098658">1</span><span style="color:#000000">)) + </span><span style="color:#001080">min</span><span style="color:#000000">;</span></span>
+<span class="line"><span style="color:#000000">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#0000FF">function</span><span style="color:#000000"> </span><span style="color:#795E26">isEven</span><span style="color:#000000">(</span><span style="color:#001080">number</span><span style="color:#000000">) {</span></span>
+<span class="line"><span style="color:#000000">  </span><span style="color:#AF00DB">return</span><span style="color:#000000"> </span><span style="color:#001080">number</span><span style="color:#000000"> % </span><span style="color:#098658">2</span><span style="color:#000000"> === </span><span style="color:#098658">0</span><span style="color:#000000">;</span></span>
+<span class="line"><span style="color:#000000">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#0000FF">function</span><span style="color:#000000"> </span><span style="color:#795E26">getSong</span><span style="color:#000000">() {</span></span>
+<span class="line"><span style="color:#000000">  </span><span style="color:#AF00DB">return</span><span style="color:#000000"> </span><span style="color:#A31515">"La Macarena"</span><span style="color:#000000">;</span></span>
+<span class="line"><span style="color:#000000">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#0000FF">function</span><span style="color:#000000"> </span><span style="color:#795E26">isThereAnyBeerLeft</span><span style="color:#000000">(</span><span style="color:#001080">beerStock</span><span style="color:#000000">) {</span></span>
+<span class="line"><span style="color:#000000">  </span><span style="color:#AF00DB">return</span><span style="color:#000000"> </span><span style="color:#001080">beerStock</span><span style="color:#000000"> &gt; </span><span style="color:#098658">0</span><span style="color:#000000">;</span></span>
+<span class="line"><span style="color:#000000">}</span></span></code></pre>
+<section class="exercisesAnswers">
+        <pre>
+         <code>
+//poner codigo 
+//aqui 
+
+         </code>
+        </pre>
+</section>
+
+<p>2.Calculadora de letra del DNI:</p>
+<p>Crea una función que reciba un número de DNI (Documento Nacional de Identidad)
+y calcule y devuelva la letra correspondiente.</p><p></p><p>Algoritmo para calcular la letra:</p>
+<ul>
+<li>Calcula el resto de la división entre el número y 23.</li>
+<li>Basándote en el resto (0 a 22), asigna la letra de este conjunto 
+  que esté en dicha posición: (T, R, W, A, G, M, Y, F, P, D, X, B, N, J, Z, S, Q, V, H, L, C, K, E).</li>
+</ul><p>Pasos:</p><ul>
+<li>Define una función llamada calculateDniLetter que acepte un parámetro dniNumber.</li>
+<li>Dentro de la función:
+<ul>
+<li>Crea una cadena de letras del DNI: ‘TRWAGMYFPDXBNJZSQVHLCKE’.</li>
+<li>Calcula el resto de la división de dniNumber entre 23.</li>
+<li>Obtén la letra correspondiente utilizando el resto como índice en la cadena de letras.</li>
+<li>Devuelve la letra del DNI calculada.</li>
+</ul>
+
+</ul>
+<p>Llama a la función calculateDNILetter(dniNumber) con diferentes números de DNI para verificar si el cálculo es correcto.</p><p>Si llamas a <code>calculateDNILetter("12345678")</code>, debería devolver la letra “Z”.
+Si llamas a <code>calculateDNILetter("98765432")</code>, debería devolver la letra “M”.</p>
+<section class="exercisesAnswers">
+        <pre>
+         <code>
+//poner codigo 
+//aqui 
+
+         </code>
+        </pre>
+</section>
+
+    </div>
+    <div>
+      <a class="back" href="/presentacion/index.html">volver</a>
+    </div>
+    <footer class="main-footer">
+      <div class="container">
+        <span>Introducsion al Desarrollo Webs</span>
+        <span>AC·DC Coders</span>
+      </div>
+    </footer>
+  </body>
+</html>

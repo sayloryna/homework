@@ -1,0 +1,69 @@
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="IMG/fav-icon.png" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content="Astro v2.10.14" />
+    <title>Depurar</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <span class="app-title">
+          <img
+            src="IMG/fav-icon.png"
+            alt="Logo sayloryna"
+            width="30"
+            height="30"
+          />
+          Introducción al Desarrollo Web -TRP
+        </span>
+        <nav>
+          <a href="/presentacion/index.html">Índice</a>
+          | Depurar
+        </nav>
+      </header>
+    <div class="exercises">
+      <h1>Depurar</h1>
+      <h2>Ponte a prueba:</h2>
+      <p>Depura este código: identifica bugs y arréglalos.</p>
+      <p>Aprovecha también para refactorizar el código. Refactorizar significa mejorar el código sin que cambie su funcionalidad.</p>
+      <pre class="astro-code light-plus" style="background-color:#FFFFFF;overflow-x:auto" tabindex="0"><code><span class="line"><span style="color:#0000FF">const</span><span style="color:#000000"> </span><span style="color:#795E26">calculateAverage</span><span style="color:#000000"> = (</span><span style="color:#001080">numbers</span><span style="color:#000000">) </span><span style="color:#0000FF">=&gt;</span><span style="color:#000000"> {</span></span>
+<span class="line"><span style="color:#000000">  </span><span style="color:#0000FF">let</span><span style="color:#000000"> </span><span style="color:#001080">sum</span><span style="color:#000000"> = </span><span style="color:#098658">0</span><span style="color:#000000">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#000000">  </span><span style="color:#AF00DB">for</span><span style="color:#000000"> (</span><span style="color:#0000FF">let</span><span style="color:#000000"> </span><span style="color:#001080">i</span><span style="color:#000000"> = </span><span style="color:#098658">0</span><span style="color:#000000">; </span><span style="color:#001080">i</span><span style="color:#000000"> &lt;= </span><span style="color:#001080">numbers</span><span style="color:#000000">.</span><span style="color:#001080">length</span><span style="color:#000000">; </span><span style="color:#001080">i</span><span style="color:#000000">++;) {</span></span>
+<span class="line"><span style="color:#000000">    </span><span style="color:#001080">sum</span><span style="color:#000000"> += </span><span style="color:#001080">numbers</span><span style="color:#000000">[</span><span style="color:#001080">i</span><span style="color:#000000">];</span></span>
+<span class="line"><span style="color:#000000">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#000000">  </span><span style="color:#0000FF">let</span><span style="color:#000000"> </span><span style="color:#001080">avg</span><span style="color:#000000"> = </span><span style="color:#001080">sum</span><span style="color:#000000"> / (</span><span style="color:#001080">numbers</span><span style="color:#000000">.</span><span style="color:#001080">length</span><span style="color:#000000"> + </span><span style="color:#098658">1</span><span style="color:#000000">);</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#000000">  </span><span style="color:#AF00DB">return</span><span style="color:#000000"> </span><span style="color:#001080">avg</span><span style="color:#000000">.</span><span style="color:#795E26">toFixed</span><span style="color:#000000">(</span><span style="color:#098658">2</span><span style="color:#000000">);</span></span>
+<span class="line"><span style="color:#000000">};</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#0000FF">let</span><span style="color:#000000"> </span><span style="color:#001080">result</span><span style="color:#000000"> = </span><span style="color:#795E26">calculateAverage</span><span style="color:#000000">();</span></span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"><span style="color:#001080">console</span><span style="color:#000000">.</span><span style="color:#795E26">log</span><span style="color:#000000">(</span><span style="color:#A31515">"El promedio es: "</span><span style="color:#000000"> + </span><span style="color:#001080">result</span><span style="color:#000000">);</span></span></code></pre>
+      <section class="exercisesAnswers">
+        <pre>
+         <code>
+//poner codigo 
+//aqui 
+
+         </code>
+        </pre>
+      </section>
+      
+    </div>
+    <div>
+      <a class="back" href="/presentacion/index.html">volver</a>
+    </div>
+    <footer class="main-footer">
+      <div class="container">
+        <span>Introducsion al Desarrollo Webs</span>
+        <span>AC·DC Coders</span>
+      </div>
+    </footer>
+  </body>
+</html>
