@@ -53,12 +53,23 @@
 <p>Modifica el código anterior para que la lógica de la hora y el saludo se
 encuentre en una función llamada <code>greet</code> que reciba como parámetros la hora y
 el nombre de la persona.</p>
-<p>Haz quye el resultado sea el mismo</p>
+<p>Haz que el resultado sea el mismo</p>
       <section class="exercisesAnswers">
         <pre>
          <code>
-//poner codigo 
-//aqui 
+    currentHour = 17;
+personName = "Ana";       
+function greet(hour,name){
+    if(hour<12){
+        return "Buenos dias "+ name
+        }else if(hour <20){
+            return "Buenas tardes " + name
+        }else{
+        return "Buenas noches " + name
+    } 
+}
+console.log(greet(currentHour,personName))
+
 
          </code>
         </pre>
@@ -86,8 +97,11 @@ expresiones diferentes.</p>
 <section class="exercisesAnswers">
         <pre>
          <code>
-//poner codigo 
-//aqui 
+la firma es:
+nombre: square
+parametros: numero
+valor devuelto: numero al cuadrado
+porque lo que ahce la funcion es elevar el numero al cuadrado, si no porqué se llamaria square
 
          </code>
         </pre>
@@ -96,8 +110,13 @@ expresiones diferentes.</p>
 <section class="exercisesAnswers">
         <pre>
          <code>
-//poner codigo 
-//aqui 
+function square(num){
+    return num*num
+}
+
+function square(num){
+    return Math.pow(num,2)
+}
 
          </code>
         </pre>
@@ -113,8 +132,7 @@ expresiones diferentes.</p>
 <section class="exercisesAnswers">
         <pre>
          <code>
-//poner codigo 
-//aqui 
+Dará error porque result es un valor local de la función no esta definido en el scope global
 
          </code>
         </pre>
